@@ -1,0 +1,951 @@
+{
+  "runId": "run-2026-05-22T14-15-29-643Z",
+  "stage": "ready_for_pr",
+  "status": "passed",
+  "repoPath": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/sandbox-repo",
+  "evidenceDir": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T14-15-29-643Z",
+  "aiMode": "rules",
+  "aiUsage": {
+    "stages": 1,
+    "tokensIn": 0,
+    "tokensOut": 0,
+    "latencyMs": 0,
+    "costEstimate": 0
+  },
+  "historyRecall": {
+    "status": "degraded",
+    "matches": [
+      {
+        "runId": "run-2026-05-21T06-24-30-577Z",
+        "goal": "Add read count display to the article list in the Conduit frontend using fake data without backend modifications.",
+        "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+        "skillId": "article-list-display-field",
+        "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+        "targetFiles": [
+          "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+          "frontend/src/styles.css"
+        ],
+        "score": 0.278,
+        "matchType": "both",
+        "similarityScore": 0.257
+      },
+      {
+        "runId": "run-2026-05-21T05-57-20-736Z",
+        "goal": "优化 Conduit 前端文章列表的视觉展示，增加数据指标显示，保持最小代码改动",
+        "sourceInput": "文章列表想好看一点，加点数据，别动太多代码",
+        "skillId": "article-list-display-field",
+        "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+        "targetFiles": [
+          "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+          "frontend/src/styles.css"
+        ],
+        "score": 0.167,
+        "matchType": "both",
+        "similarityScore": 0.229
+      },
+      {
+        "runId": "run-2026-05-21T06-21-56-710Z",
+        "goal": "Popular Tags 前 5 个打标",
+        "sourceInput": "给 Popular Tags 侧边栏前5个标签打醒目标记，纯前端",
+        "skillId": "popular-tags-top-five",
+        "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+        "targetFiles": [
+          "frontend/src/components/PopularTags/TagButton.jsx",
+          "frontend/src/styles.css"
+        ],
+        "score": 0.167,
+        "matchType": "both",
+        "similarityScore": 0.189
+      }
+    ],
+    "skipped": [
+      {
+        "runId": "run-2026-05-21T05-51-51-117Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-51-51-117Z/requirement.md'"
+      },
+      {
+        "runId": "run-2026-05-21T05-57-01-385Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-01-385Z/requirement.md'"
+      },
+      {
+        "runId": "run-2026-05-21T05-57-39-036Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-39-036Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-23-46-138Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-23-46-138Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-06-533Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-06-533Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-17-130Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-17-130Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-20-208Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-20-208Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-25-564Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-25-564Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-27-15-778Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-27-15-778Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-28-23-665Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-28-23-665Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-11-622Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-11-622Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-23-341Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-23-341Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-26-110Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-26-110Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-46-012Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-46-012Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-55-844Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-55-844Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-57-477Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-57-477Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T12-27-28-737Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T12-27-28-737Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T12-45-07-772Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T12-45-07-772Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T12-45-27-300Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T12-45-27-300Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-47-15-825Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-47-15-825Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-49-38-240Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-49-38-240Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-50-19-792Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-50-19-792Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-52-26-170Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-52-26-170Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-52-42-794Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-52-42-794Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-53-04-148Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-53-04-148Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-54-36-485Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-54-36-485Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-55-00-500Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-55-00-500Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-55-15-877Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-55-15-877Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-11-20-907Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-11-20-907Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-11-45-896Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-11-45-896Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-27-59-972Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-27-59-972Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-31-46-977Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-31-46-977Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-51-43-390Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-51-43-390Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-52-05-163Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-52-05-163Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-53-52-453Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-53-52-453Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-54-19-210Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-54-19-210Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-06-08-220Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-06-08-220Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-06-18-786Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-06-18-786Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-18-25-040Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-18-25-040Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-18-38-481Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-18-38-481Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-19-15-800Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-19-15-800Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-28-55-588Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-28-55-588Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-29-09-715Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-29-09-715Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-29-46-993Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-29-46-993Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-42-17-703Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-42-17-703Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-53-48-325Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-53-48-325Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-59-55-279Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-59-55-279Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-10-35-447Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-10-35-447Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-13-49-842Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-13-49-842Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-30-49-906Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-30-49-906Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-44-12-624Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-44-12-624Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-46-24-919Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-46-24-919Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-53-35-248Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-53-35-248Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-54-43-809Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-54-43-809Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-57-28-440Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-57-28-440Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-17-07-931Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-17-07-931Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-30-00-048Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-30-00-048Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-47-06-520Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-47-06-520Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-55-48-430Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-55-48-430Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-04-43-186Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-04-43-186Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-05-15-189Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-05-15-189Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-09-16-624Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-09-16-624Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-18-30-681Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-18-30-681Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-31-36-571Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-31-36-571Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-41-33-067Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-41-33-067Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-52-54-199Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-52-54-199Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-06-39-440Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-06-39-440Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-11-14-140Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-11-14-140Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-12-20-179Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-12-20-179Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-12-51-554Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-12-51-554Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-17-20-406Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-17-20-406Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-18-54-365Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-18-54-365Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-20-20-445Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-20-20-445Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-21-32-424Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-21-32-424Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-23-50-195Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-23-50-195Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-34-29-615Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-34-29-615Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-40-36-400Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-40-36-400Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-48-59-659Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-48-59-659Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-59-54-926Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-59-54-926Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-09-59-337Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-09-59-337Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-10-24-384Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-10-24-384Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-19-45-557Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-19-45-557Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-20-08-596Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-20-08-596Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-30-59-950Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-30-59-950Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-43-44-464Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-43-44-464Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-49-00-473Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-49-00-473Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-53-58-916Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-53-58-916Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-59-08-672Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-59-08-672Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T23-21-57-133Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T23-21-57-133Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-29-27-429Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-29-27-429Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-37-05-194Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-37-05-194Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-40-21-290Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-40-21-290Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-47-56-212Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-47-56-212Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-55-27-379Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-55-27-379Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-01-52-430Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-01-52-430Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-16-12-116Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-16-12-116Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-28-47-112Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-28-47-112Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-35-29-574Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-35-29-574Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-36-44-601Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-36-44-601Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-49-14-814Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-49-14-814Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-55-03-789Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-55-03-789Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T14-14-34-226Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T14-14-34-226Z/plan.md'"
+      }
+    ],
+    "invalidRuns": [
+      {
+        "runId": "run-2026-05-21T05-51-51-117Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-51-51-117Z/requirement.md'"
+      },
+      {
+        "runId": "run-2026-05-21T05-57-01-385Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-01-385Z/requirement.md'"
+      },
+      {
+        "runId": "run-2026-05-21T05-57-39-036Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-39-036Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-23-46-138Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-23-46-138Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-06-533Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-06-533Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-17-130Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-17-130Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-20-208Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-20-208Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-24-25-564Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-24-25-564Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-27-15-778Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-27-15-778Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-28-23-665Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-28-23-665Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-11-622Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-11-622Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-23-341Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-23-341Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-26-110Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-26-110Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-46-012Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-46-012Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-55-844Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-55-844Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T06-32-57-477Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T06-32-57-477Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T12-27-28-737Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T12-27-28-737Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T12-45-07-772Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T12-45-07-772Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T12-45-27-300Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T12-45-27-300Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-47-15-825Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-47-15-825Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-49-38-240Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-49-38-240Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-50-19-792Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-50-19-792Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-52-26-170Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-52-26-170Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-52-42-794Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-52-42-794Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-53-04-148Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-53-04-148Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-54-36-485Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-54-36-485Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-55-00-500Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-55-00-500Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T15-55-15-877Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T15-55-15-877Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-11-20-907Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-11-20-907Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-11-45-896Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-11-45-896Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-27-59-972Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-27-59-972Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-31-46-977Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-31-46-977Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-51-43-390Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-51-43-390Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-52-05-163Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-52-05-163Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-53-52-453Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-53-52-453Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T16-54-19-210Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T16-54-19-210Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-06-08-220Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-06-08-220Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-06-18-786Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-06-18-786Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-18-25-040Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-18-25-040Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-18-38-481Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-18-38-481Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-19-15-800Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-19-15-800Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-28-55-588Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-28-55-588Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-29-09-715Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-29-09-715Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-29-46-993Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-29-46-993Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-42-17-703Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-42-17-703Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-53-48-325Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-53-48-325Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T17-59-55-279Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T17-59-55-279Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-10-35-447Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-10-35-447Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-13-49-842Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-13-49-842Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-30-49-906Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-30-49-906Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-44-12-624Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-44-12-624Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-46-24-919Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-46-24-919Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-53-35-248Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-53-35-248Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-54-43-809Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-54-43-809Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T18-57-28-440Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T18-57-28-440Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-17-07-931Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-17-07-931Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-30-00-048Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-30-00-048Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-47-06-520Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-47-06-520Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T19-55-48-430Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T19-55-48-430Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-04-43-186Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-04-43-186Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-05-15-189Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-05-15-189Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-09-16-624Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-09-16-624Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-18-30-681Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-18-30-681Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-31-36-571Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-31-36-571Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-41-33-067Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-41-33-067Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T20-52-54-199Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T20-52-54-199Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-06-39-440Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-06-39-440Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-11-14-140Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-11-14-140Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-12-20-179Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-12-20-179Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-12-51-554Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-12-51-554Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-17-20-406Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-17-20-406Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-18-54-365Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-18-54-365Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-20-20-445Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-20-20-445Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-21-32-424Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-21-32-424Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-23-50-195Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-23-50-195Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-34-29-615Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-34-29-615Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-40-36-400Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-40-36-400Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-48-59-659Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-48-59-659Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T21-59-54-926Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T21-59-54-926Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-09-59-337Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-09-59-337Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-10-24-384Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-10-24-384Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-19-45-557Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-19-45-557Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-20-08-596Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-20-08-596Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-30-59-950Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-30-59-950Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-43-44-464Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-43-44-464Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-49-00-473Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-49-00-473Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-53-58-916Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-53-58-916Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T22-59-08-672Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T22-59-08-672Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-21T23-21-57-133Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T23-21-57-133Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-29-27-429Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-29-27-429Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-37-05-194Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-37-05-194Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-40-21-290Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-40-21-290Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-47-56-212Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-47-56-212Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T12-55-27-379Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T12-55-27-379Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-01-52-430Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-01-52-430Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-16-12-116Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-16-12-116Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-28-47-112Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-28-47-112Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-35-29-574Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-35-29-574Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-36-44-601Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-36-44-601Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-49-14-814Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-49-14-814Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T13-55-03-789Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T13-55-03-789Z/plan.md'"
+      },
+      {
+        "runId": "run-2026-05-22T14-14-34-226Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T14-14-34-226Z/plan.md'"
+      }
+    ]
+  },
+  "targetFiles": [
+    "backend/models/Comment.js",
+    "backend/controllers/comments.js",
+    "backend/routes/articles/comments.js",
+    "frontend/src/components/CommentList/CommentList.jsx"
+  ],
+  "verificationStatus": "passed",
+  "events": [
+    {
+      "at": "2026-05-22T14:15:29.644Z",
+      "stage": "clarifying",
+      "message": "Build requirement card"
+    },
+    {
+      "at": "2026-05-22T14:15:29.696Z",
+      "stage": "planning",
+      "message": "Locate Skill and target files"
+    },
+    {
+      "at": "2026-05-22T14:15:29.706Z",
+      "stage": "editing",
+      "message": "Apply patch to Conduit sandbox"
+    },
+    {
+      "at": "2026-05-22T14:15:29.740Z",
+      "stage": "verifying",
+      "message": "Run Conduit verification"
+    },
+    {
+      "at": "2026-05-22T14:15:31.952Z",
+      "stage": "pr_drafting",
+      "message": "Generate PR draft"
+    }
+  ],
+  "checkpoints": {
+    "clarifying": {
+      "at": "2026-05-22T14:15:29.696Z",
+      "artifacts": [
+        "requirement.md",
+        "history-recall.json",
+        "ai-calls.jsonl"
+      ]
+    },
+    "planning": {
+      "at": "2026-05-22T14:15:29.706Z",
+      "artifacts": [
+        "plan.md"
+      ]
+    },
+    "editing": {
+      "at": "2026-05-22T14:15:29.740Z",
+      "artifacts": [
+        "diff.patch"
+      ]
+    },
+    "verifying": {
+      "at": "2026-05-22T14:15:31.952Z",
+      "artifacts": [
+        "verification.json"
+      ]
+    },
+    "pr_drafting": {
+      "at": "2026-05-22T14:15:31.953Z",
+      "artifacts": [
+        "pr-draft.md",
+        "ai-calls.jsonl"
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{"runId":"run-2026-05-22T13-13-38-762Z","questionId":"Q1","question":"Which aspect to optimize?","answer":"在文章详情页正文末尾加字数统计的展示，前端假数据即可","answeredAt":"2026-05-22T13:14:00.000Z"}
+{"runId":"run-2026-05-22T13-13-38-762Z","questionId":"Q2","question":"What small info to add?","answer":"展示『字数：X』；样式沿用现有 word count UI；前端基于 Article.body 字符串长度估算","answeredAt":"2026-05-22T13:14:15.000Z"}
+{"runId":"run-2026-05-22T13-13-38-762Z","questionId":"Q3","question":"Measure stay time?","answer":"本次不做埋点；目标只是字数 / word count 显示","answeredAt":"2026-05-22T13:14:30.000Z"}
+{"runId":"run-2026-05-22T13-13-38-762Z","questionId":"Q4","question":"Backend changes?","answer":"严格 frontend-only：不改 backend，不改 database，不加 API","answeredAt":"2026-05-22T13:14:45.000Z"}

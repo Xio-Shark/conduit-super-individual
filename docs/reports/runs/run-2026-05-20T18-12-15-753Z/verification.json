@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "checks": [
+    {
+      "command": "npm run lint:sandbox",
+      "exitCode": 0,
+      "stdout": "\n> conduit-super-individual@1.0.0 lint:sandbox\n> eslint sandbox-repo/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx && stylelint sandbox-repo/frontend/src/styles.css\n\n",
+      "stderr": "",
+      "durationMs": 417
+    },
+    {
+      "command": "npm run test",
+      "exitCode": 127,
+      "stdout": "\n> conduit-realworld-example-app@1.0.0 test\n> vitest\n\n",
+      "stderr": "sh: vitest: command not found\n",
+      "durationMs": 89
+    }
+  ]
+}

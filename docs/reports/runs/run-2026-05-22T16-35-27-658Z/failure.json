@@ -1,0 +1,23 @@
+{
+  "runId": "run-2026-05-22T16-35-27-658Z",
+  "stage": "failed",
+  "status": "failed",
+  "error": "AI_MODE is required. Use \"rules\" for local P0 or \"llm\" for LLM clarify.",
+  "repoPath": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/sandbox-repo",
+  "evidenceDir": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-22T16-35-27-658Z",
+  "events": [
+    {
+      "at": "2026-05-22T16:35:27.659Z",
+      "stage": "clarifying",
+      "message": "Build requirement card"
+    },
+    {
+      "at": "2026-05-22T16:35:27.696Z",
+      "stage": "failed",
+      "message": "AI_MODE is required. Use \"rules\" for local P0 or \"llm\" for LLM clarify."
+    }
+  ],
+  "checkpoints": {},
+  "aiCalls": null,
+  "aiUsage": null
+}

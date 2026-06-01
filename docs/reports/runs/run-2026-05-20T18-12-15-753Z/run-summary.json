@@ -1,0 +1,13 @@
+{
+  "runId": "run-2026-05-20T18-12-15-753Z",
+  "stage": "ready_for_pr",
+  "status": "failed",
+  "repoPath": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/sandbox-repo",
+  "evidenceDir": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-20T18-12-15-753Z",
+  "aiMode": "rules",
+  "targetFiles": [
+    "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+    "frontend/src/styles.css"
+  ],
+  "verificationStatus": "failed"
+}

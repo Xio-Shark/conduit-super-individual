@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "command": "npm run lint:sandbox",
+      "exitCode": 0,
+      "stdout": "\n> conduit-super-individual@1.0.0 lint:sandbox\n> eslint sandbox-repo/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx && stylelint sandbox-repo/frontend/src/styles.css\n\n",
+      "stderr": "",
+      "durationMs": 811,
+      "source": "implementation-lint-adapter"
+    },
+    {
+      "command": "npm run test",
+      "exitCode": 0,
+      "stdout": "\n> conduit-realworld-example-app@1.0.0 test\n> vitest\n\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv4.0.18 \u001b[39m\u001b[90m/Users/xioshark/Desktop/bytedance/bytedance-implementation/sandbox-repo\u001b[39m\n\n \u001b[32m✓\u001b[39m backend/helper/helpers.test.js \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m frontend/src/helpers/errorHandler.test.js \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m frontend/src/helpers/dateFormatter.test.js \u001b[2m(\u001b[22m\u001b[2m1 test\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 21\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m12 passed\u001b[39m\u001b[22m\u001b[90m (12)\u001b[39m\n\u001b[2m   Start at \u001b[22m 20:35:13\n\u001b[2m   Duration \u001b[22m 963ms\u001b[2m (transform 79ms, setup 316ms, import 78ms, tests 32ms, environment 2.05s)\u001b[22m\n\n",
+      "stderr": "",
+      "durationMs": 1413
+    }
+  ]
+}

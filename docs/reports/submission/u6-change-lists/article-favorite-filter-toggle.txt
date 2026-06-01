@@ -1,0 +1,11 @@
+services/skills/src/articleFavoriteFilterToggle.js
+services/skills/src/registry.js
+sandbox-repo/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
+sandbox-repo/frontend/src/styles.css
+docs/reports/runs/run-u6-article-favorite-filter-toggle/requirement.md
+docs/reports/runs/run-u6-article-favorite-filter-toggle/plan.md
+docs/reports/runs/run-u6-article-favorite-filter-toggle/diff.patch
+docs/reports/runs/run-u6-article-favorite-filter-toggle/verification.json
+docs/reports/runs/run-u6-article-favorite-filter-toggle/run-summary.json
+docs/reports/submission/u6-change-lists/article-favorite-filter-toggle.txt
+docs/reports/submission/u6-recordings/article-favorite-filter-toggle.txt

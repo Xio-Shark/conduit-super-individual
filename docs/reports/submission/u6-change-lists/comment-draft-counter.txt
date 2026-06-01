@@ -1,0 +1,11 @@
+services/skills/src/commentDraftCounter.js
+services/skills/src/registry.js
+sandbox-repo/frontend/src/components/CommentEditor/CommentEditor.jsx
+sandbox-repo/frontend/src/styles.css
+docs/reports/runs/run-u6-comment-draft-counter/requirement.md
+docs/reports/runs/run-u6-comment-draft-counter/plan.md
+docs/reports/runs/run-u6-comment-draft-counter/diff.patch
+docs/reports/runs/run-u6-comment-draft-counter/verification.json
+docs/reports/runs/run-u6-comment-draft-counter/run-summary.json
+docs/reports/submission/u6-change-lists/comment-draft-counter.txt
+docs/reports/submission/u6-recordings/comment-draft-counter.txt

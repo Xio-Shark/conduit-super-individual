@@ -1,0 +1,16 @@
+U6 local rehearsal record
+
+Title: 作者资料卡显示注册天数
+Skill: profile-account-age
+Run: run-u6-profile-account-age
+Started: 2026-06-02T09:18:00+08:00
+Ended: 2026-06-02T09:29:10+08:00
+Duration: 11m10s
+Verification: passed
+
+Evidence:
+- docs/reports/runs/run-u6-profile-account-age/diff.patch
+- docs/reports/runs/run-u6-profile-account-age/verification.json
+- services/skills/src/profileAccountAge.js
+
+Note: This is a local terminal rehearsal record for the U6 gate, not a public demo video.

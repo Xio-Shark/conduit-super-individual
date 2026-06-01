@@ -1,0 +1,55 @@
+{
+  "name": "conduit-super-individual",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "concurrently --names api,web --prefix-colors green,blue \"npm run dev -w apps/api\" \"npm run dev -w apps/web\"",
+    "dev:api": "npm run dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web",
+    "lint": "npm run lint:sandbox",
+    "lint:sandbox": "eslint sandbox-repo/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx && stylelint sandbox-repo/frontend/src/styles.css",
+    "run:p0": "AI_MODE=rules node services/orchestrator/src/cli.js \"给文章列表加阅读量展示，前端假数据即可，不改后端。\"",
+    "run:p0:rules": "AI_MODE=rules node services/orchestrator/src/cli.js \"给文章列表加阅读量展示，前端假数据即可，不改后端。\"",
+    "run:fuzzy-llm": "AI_MODE=llm node services/orchestrator/src/cli.js \"文章列表想好看一点，加点数据，别动太多代码。\"",
+    "archive:dry-run": "node scripts/archive-dry-run.mjs",
+    "check:public-repo": "node scripts/check-public-repo.mjs",
+    "check:external-submission": "node scripts/check-external-submission.mjs",
+    "check:video-evidence": "node scripts/check-video-evidence.mjs",
+    "check:defense-rehearsal": "node scripts/check-defense-rehearsal.mjs",
+    "check:submission-gates": "node scripts/check-submission-gates.mjs",
+    "submission:next-steps": "node scripts/submission-next-steps.mjs",
+    "submission:next-steps:summary": "node scripts/submission-next-steps.mjs --summary",
+    "submission:next-steps:summary:write": "node scripts/submission-next-steps.mjs --summary --write docs/reports/submission/next-steps-summary.json",
+    "submission:next-steps:markdown": "node scripts/submission-next-steps.mjs --markdown",
+    "submission:next-steps:commands": "node scripts/submission-next-steps.mjs --commands",
+    "submission:next-steps:commands:write": "node scripts/submission-next-steps.mjs --commands --write docs/reports/submission/next-steps.sh",
+    "submission:next-steps:next": "node scripts/submission-next-steps.mjs --next",
+    "submission:next-steps:next:summary": "node scripts/submission-next-steps.mjs --next --summary",
+    "submission:next-steps:next:summary:write": "node scripts/submission-next-steps.mjs --next --summary --write docs/reports/submission/next-steps-summary.json",
+    "submission:next-steps:next:markdown": "node scripts/submission-next-steps.mjs --next --markdown",
+    "submission:next-steps:next:commands": "node scripts/submission-next-steps.mjs --next --commands",
+    "submission:next-steps:next:commands:write": "node scripts/submission-next-steps.mjs --next --commands --write docs/reports/submission/next-steps.sh",
+    "scaffold:submission-evidence": "node scripts/scaffold-submission-evidence.mjs",
+    "scaffold:u6": "node scripts/scaffold-u6-rehearsal.mjs",
+    "check:u6": "node scripts/check-u6-rehearsal.mjs",
+    "test": "node --test \"services/**/*.test.js\" \"external/git-provider/**/*.test.js\" \"apps/api/**/*.test.js\" \"apps/web/**/*.test.js\" \"scripts/**/*.test.js\"",
+    "test:e2e": "bash scripts/run-e2e.sh",
+    "test:integration": "RUN_INTEGRATION=1 node --test apps/api/src/app.integration.test.js",
+    "verify": "npm run test && npm run lint:sandbox && npm run test --prefix sandbox-repo && npm run build -w apps/web"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^10.4.0",
+    "stylelint": "^17.12.0",
+    "stylelint-config-standard": "^40.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

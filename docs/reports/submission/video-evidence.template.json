@@ -1,0 +1,201 @@
+{
+  "video": {
+    "title": "REPLACE_WITH_VIDEO_TITLE",
+    "recordedAt": "REPLACE_WITH_RECORDING_ISO_TIME",
+    "durationMinutes": 6,
+    "recording": "docs/reports/submission/video-recordings/REPLACE_WITH_RECORDING.mp4",
+    "notes": "docs/reports/submission/video-notes/REPLACE_WITH_NOTES.md"
+  },
+  "coverage": [
+    "p2.1",
+    "p2.2-1",
+    "p2.2-2",
+    "p2.2-3",
+    "p2.2-4",
+    "p2.2-5",
+    "p2.2-6",
+    "u1-schema-driven",
+    "u2-multi-turn-clarify",
+    "u3-plan-llm",
+    "u4-semantic-recall",
+    "u5-non-list-skill",
+    "ai-usage",
+    "public-repo"
+  ],
+  "segments": [
+    {
+      "id": "segment-1",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 0,
+      "endSeconds": 20,
+      "coverage": [
+        "p2.1"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-2",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 20,
+      "endSeconds": 40,
+      "coverage": [
+        "p2.2-1"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-3",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 40,
+      "endSeconds": 60,
+      "coverage": [
+        "p2.2-2"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-4",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 60,
+      "endSeconds": 80,
+      "coverage": [
+        "p2.2-3"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-5",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 80,
+      "endSeconds": 100,
+      "coverage": [
+        "p2.2-4"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-6",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 100,
+      "endSeconds": 120,
+      "coverage": [
+        "p2.2-5"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-7",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 120,
+      "endSeconds": 140,
+      "coverage": [
+        "p2.2-6"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-8",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 140,
+      "endSeconds": 160,
+      "coverage": [
+        "u1-schema-driven"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-9",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 160,
+      "endSeconds": 180,
+      "coverage": [
+        "u2-multi-turn-clarify"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-10",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 180,
+      "endSeconds": 200,
+      "coverage": [
+        "u3-plan-llm"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-11",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 200,
+      "endSeconds": 220,
+      "coverage": [
+        "u4-semantic-recall"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-12",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 220,
+      "endSeconds": 240,
+      "coverage": [
+        "u5-non-list-skill"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-13",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 240,
+      "endSeconds": 260,
+      "coverage": [
+        "ai-usage"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "segment-14",
+      "title": "REPLACE_WITH_SEGMENT_TITLE",
+      "startSeconds": 260,
+      "endSeconds": 280,
+      "coverage": [
+        "public-repo"
+      ],
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    }
+  ],
+  "outcome": {
+    "status": "recorded",
+    "openIssues": [],
+    "scriptReviewed": true,
+    "guidePath": "docs/reports/submission/video-recording-guide.md"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "minRehearsals": 3,
+  "minPassed": 2,
+  "maxMinutes": 15,
+  "maxSkillLines": 120,
+  "note": "Generated scaffold only. Do not mark U6 complete until recordings, run evidence, Skill files, registry entries, implementation change lists, and timestamps are real.",
+  "rehearsals": [
+    {
+      "title": "评论输入框字数倒计数",
+      "runId": "run-u6-comment-draft-counter",
+      "skillId": "comment-draft-counter",
+      "skillFile": "services/skills/src/commentDraftCounter.js",
+      "implementationChangeList": "docs/reports/submission/u6-change-lists/comment-draft-counter.txt",
+      "recording": "docs/reports/submission/u6-recordings/comment-draft-counter.mp4",
+      "startedAt": "REPLACE_WITH_START_ISO",
+      "endedAt": "REPLACE_WITH_END_ISO"
+    },
+    {
+      "title": "作者资料卡显示注册天数",
+      "runId": "run-u6-profile-account-age",
+      "skillId": "profile-account-age",
+      "skillFile": "services/skills/src/profileAccountAge.js",
+      "implementationChangeList": "docs/reports/submission/u6-change-lists/profile-account-age.txt",
+      "recording": "docs/reports/submission/u6-recordings/profile-account-age.mp4",
+      "startedAt": "REPLACE_WITH_START_ISO",
+      "endedAt": "REPLACE_WITH_END_ISO"
+    },
+    {
+      "title": "文章卡片收藏状态筛选开关",
+      "runId": "run-u6-article-favorite-filter-toggle",
+      "skillId": "article-favorite-filter-toggle",
+      "skillFile": "services/skills/src/articleFavoriteFilterToggle.js",
+      "implementationChangeList": "docs/reports/submission/u6-change-lists/article-favorite-filter-toggle.txt",
+      "recording": "docs/reports/submission/u6-recordings/article-favorite-filter-toggle.mp4",
+      "startedAt": "REPLACE_WITH_START_ISO",
+      "endedAt": "REPLACE_WITH_END_ISO"
+    }
+  ]
+}

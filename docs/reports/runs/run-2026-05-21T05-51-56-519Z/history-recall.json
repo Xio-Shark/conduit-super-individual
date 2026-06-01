@@ -1,0 +1,53 @@
+{
+  "status": "degraded",
+  "matches": [
+    {
+      "runId": "run-2026-05-20T17-09-37-011Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 0.652
+    },
+    {
+      "runId": "run-2026-05-20T17-11-44-097Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 0.652
+    },
+    {
+      "runId": "run-2026-05-20T17-20-38-453Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 0.652
+    }
+  ],
+  "skipped": [
+    {
+      "runId": "run-2026-05-21T05-51-51-117Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-51-51-117Z/requirement.md'"
+    }
+  ],
+  "invalidRuns": [
+    {
+      "runId": "run-2026-05-21T05-51-51-117Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-51-51-117Z/requirement.md'"
+    }
+  ]
+}

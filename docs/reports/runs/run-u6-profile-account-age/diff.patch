@@ -1,0 +1,58 @@
+diff --git a/frontend/src/routes/Profile/Profile.jsx b/frontend/src/routes/Profile/Profile.jsx
+index 6b30fdc..9b8e977 100644
+--- a/frontend/src/routes/Profile/Profile.jsx
++++ b/frontend/src/routes/Profile/Profile.jsx
+@@ -3,6 +3,13 @@ import AuthorInfo from "../../components/AuthorInfo";
+ import ContainerRow from "../../components/ContainerRow";
+ import NavItem from "../../components/NavItem";
+ 
++function getProfileAccountAgeDays(state) {
++  const createdAt = state?.createdAt ?? state?.author?.createdAt;
++  if (!createdAt) return 30;
++  const joinedAt = new Date(createdAt).getTime();
++  if (Number.isNaN(joinedAt)) return 30;
++  return Math.max(1, Math.ceil((Date.now() - joinedAt) / 86400000));
++}
+ function Profile() {
+   const { state } = useLocation();
+ 
+@@ -11,6 +18,9 @@ function Profile() {
+       <div className="user-info">
+         <ContainerRow>
+           <AuthorInfo />
++          <p className="profile-account-age">
++            Member for {getProfileAccountAgeDays(state)} days
++          </p>
+         </ContainerRow>
+       </div>
+ 
+diff --git a/frontend/src/styles.css b/frontend/src/styles.css
+index 7b5159f..acb64aa 100644
+--- a/frontend/src/styles.css
++++ b/frontend/src/styles.css
+@@ -1413,6 +1413,13 @@ footer > .container {
+   padding: 0;
+ }
+ 
++.comment-draft-counter {
++  display: block;
++  margin-top: 0.35rem;
++  color: var(--text-light);
++  font-size: 0.75rem;
++  text-align: right;
++}
+ .article-page .comment-form .card-block textarea {
+   border: 0;
+   padding: 1.25rem;
+@@ -1498,6 +1505,11 @@ footer > .container {
+   font-weight: 700;
+ }
+ 
++.profile-account-age {
++  margin-top: 0.5rem;
++  color: var(--text-light);
++  font-size: 0.85rem;
++}
+ .profile-page .user-info p {
+   margin: 0 auto 0.5rem auto;
+   color: var(--text-lighter);

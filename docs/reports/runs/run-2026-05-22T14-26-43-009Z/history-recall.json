@@ -1,0 +1,49 @@
+{
+  "status": "ready",
+  "matches": [
+    {
+      "runId": "run-2026-05-20T18-14-51-263Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 1,
+      "matchType": "both",
+      "similarityScore": 0.863
+    },
+    {
+      "runId": "run-2026-05-20T18-16-29-913Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 1,
+      "matchType": "both",
+      "similarityScore": 0.863
+    },
+    {
+      "runId": "run-2026-05-20T18-28-39-030Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 1,
+      "matchType": "both",
+      "similarityScore": 0.863
+    }
+  ],
+  "skipped": [],
+  "invalidRuns": []
+}

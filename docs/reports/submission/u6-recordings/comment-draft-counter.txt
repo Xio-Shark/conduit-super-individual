@@ -1,0 +1,16 @@
+U6 local rehearsal record
+
+Title: 评论输入框字数倒计数
+Skill: comment-draft-counter
+Run: run-u6-comment-draft-counter
+Started: 2026-06-02T09:00:00+08:00
+Ended: 2026-06-02T09:11:20+08:00
+Duration: 11m20s
+Verification: passed
+
+Evidence:
+- docs/reports/runs/run-u6-comment-draft-counter/diff.patch
+- docs/reports/runs/run-u6-comment-draft-counter/verification.json
+- services/skills/src/commentDraftCounter.js
+
+Note: This is a local terminal rehearsal record for the U6 gate, not a public demo video.

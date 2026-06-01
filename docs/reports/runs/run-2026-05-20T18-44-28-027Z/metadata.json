@@ -1,0 +1,18 @@
+{
+  "retryOf": null,
+  "confirmations": [
+    {
+      "target": "plan",
+      "decision": "approved",
+      "note": "cold start check",
+      "at": "2026-05-20T18:52:12.565Z"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-05-20T18:52:12.565Z",
+      "stage": "human_confirm",
+      "message": "plan approved"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "status": "degraded",
+  "matches": [
+    {
+      "runId": "run-2026-05-21T05-57-20-736Z",
+      "goal": "优化 Conduit 前端文章列表的视觉展示，增加数据指标显示，保持最小代码改动",
+      "sourceInput": "文章列表想好看一点，加点数据，别动太多代码",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 1
+    },
+    {
+      "runId": "run-2026-05-20T17-26-03-046Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 0.278
+    },
+    {
+      "runId": "run-2026-05-20T17-37-55-856Z",
+      "goal": "文章列表卡片展示阅读量",
+      "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+      "skillId": "article-list-display-field",
+      "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+      "targetFiles": [
+        "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+        "frontend/src/styles.css"
+      ],
+      "score": 0.278
+    }
+  ],
+  "skipped": [
+    {
+      "runId": "run-2026-05-21T05-51-51-117Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-51-51-117Z/requirement.md'"
+    },
+    {
+      "runId": "run-2026-05-21T05-57-01-385Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-01-385Z/requirement.md'"
+    },
+    {
+      "runId": "run-2026-05-21T05-57-39-036Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-39-036Z/plan.md'"
+    }
+  ],
+  "invalidRuns": [
+    {
+      "runId": "run-2026-05-21T05-51-51-117Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-51-51-117Z/requirement.md'"
+    },
+    {
+      "runId": "run-2026-05-21T05-57-01-385Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-01-385Z/requirement.md'"
+    },
+    {
+      "runId": "run-2026-05-21T05-57-39-036Z",
+      "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-21T05-57-39-036Z/plan.md'"
+    }
+  ]
+}

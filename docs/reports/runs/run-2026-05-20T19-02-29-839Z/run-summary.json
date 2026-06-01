@@ -1,0 +1,94 @@
+{
+  "runId": "run-2026-05-20T19-02-29-839Z",
+  "stage": "ready_for_pr",
+  "status": "passed",
+  "repoPath": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/sandbox-repo",
+  "evidenceDir": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-20T19-02-29-839Z",
+  "aiMode": "rules",
+  "historyRecall": {
+    "matches": [
+      {
+        "runId": "run-2026-05-20T17-09-37-011Z",
+        "goal": "文章列表卡片展示阅读量",
+        "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+        "skillId": "article-list-display-field",
+        "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+        "targetFiles": [
+          "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+          "frontend/src/styles.css"
+        ],
+        "score": 1
+      },
+      {
+        "runId": "run-2026-05-20T17-11-44-097Z",
+        "goal": "文章列表卡片展示阅读量",
+        "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+        "skillId": "article-list-display-field",
+        "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+        "targetFiles": [
+          "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+          "frontend/src/styles.css"
+        ],
+        "score": 1
+      },
+      {
+        "runId": "run-2026-05-20T17-20-38-453Z",
+        "goal": "文章列表卡片展示阅读量",
+        "sourceInput": "给文章列表加阅读量展示，前端假数据即可，不改后端。",
+        "skillId": "article-list-display-field",
+        "summary": "在 Conduit 文章列表卡片增加确定性阅读量展示。",
+        "targetFiles": [
+          "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+          "frontend/src/styles.css"
+        ],
+        "score": 1
+      }
+    ],
+    "skipped": [
+      {
+        "runId": "run-2026-05-20T17-20-18-596Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-20T17-20-18-596Z/requirement.md'"
+      },
+      {
+        "runId": "run-2026-05-20T17-21-45-522Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-20T17-21-45-522Z/requirement.md'"
+      },
+      {
+        "runId": "run-2026-05-20T17-24-10-873Z",
+        "reason": "ENOENT: no such file or directory, open '/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-2026-05-20T17-24-10-873Z/requirement.md'"
+      }
+    ]
+  },
+  "targetFiles": [
+    "frontend/src/components/ArticlesPreview/ArticlesPreview.jsx",
+    "frontend/src/styles.css"
+  ],
+  "verificationStatus": "passed",
+  "events": [
+    {
+      "at": "2026-05-20T19:02:29.840Z",
+      "stage": "clarifying",
+      "message": "Build requirement card"
+    },
+    {
+      "at": "2026-05-20T19:02:29.854Z",
+      "stage": "planning",
+      "message": "Locate Skill and target files"
+    },
+    {
+      "at": "2026-05-20T19:02:29.855Z",
+      "stage": "editing",
+      "message": "Apply patch to Conduit sandbox"
+    },
+    {
+      "at": "2026-05-20T19:02:29.871Z",
+      "stage": "verifying",
+      "message": "Run Conduit verification"
+    },
+    {
+      "at": "2026-05-20T19:02:30.821Z",
+      "stage": "pr_drafting",
+      "message": "Generate PR draft"
+    }
+  ]
+}

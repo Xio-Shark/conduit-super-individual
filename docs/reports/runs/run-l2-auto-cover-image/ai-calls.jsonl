@@ -1,0 +1,1 @@
+{"run_id":"run-2026-05-22T12-35-12-220Z","stage":"clarify","model":"rules-first-p0","prompt_version":"rules-first-p0","skill_id":"article-cover-image","input_summary":"为文章加封面图字段","output_summary":"为 Article 模型新增 coverImage 字段并自动同步前端类型/服务/Mock","tokens_in":0,"tokens_out":0,"latency_ms":0,"cost_estimate":0,"status":"reviewed"}

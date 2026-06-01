@@ -1,0 +1,47 @@
+{
+  "team": {
+    "name": "REPLACE_WITH_TEAM_NAME",
+    "members": [
+      {
+        "name": "REPLACE_WITH_MEMBER_NAME",
+        "role": "REPLACE_WITH_ROLE"
+      }
+    ]
+  },
+  "links": {
+    "demoUrl": "REPLACE_WITH_DEMO_URL",
+    "videoUrl": "REPLACE_WITH_VIDEO_URL",
+    "publicRepoUrl": "REPLACE_WITH_PUBLIC_REPO_URL"
+  },
+  "video": {
+    "durationMinutes": 5,
+    "coverage": [
+      "p2.1",
+      "p2.2-1",
+      "p2.2-2",
+      "p2.2-3",
+      "p2.2-4",
+      "p2.2-5",
+      "p2.2-6",
+      "ai-usage",
+      "public-repo"
+    ]
+  },
+  "publicRepo": {
+    "url": "REPLACE_WITH_PUBLIC_REPO_URL",
+    "freshClonePath": "REPLACE_WITH_FRESH_CLONE_PATH",
+    "freshCloneCheckStatus": "passed",
+    "freshCloneCheckedAt": "REPLACE_WITH_ISO_TIME"
+  },
+  "security": {
+    "remoteSecretScanningStatus": "passed",
+    "remoteSecretScanningCheckedAt": "REPLACE_WITH_ISO_TIME",
+    "remoteSecretScanningEvidence": "REPLACE_WITH_REMOTE_SECRET_SCANNING_EVIDENCE"
+  },
+  "submission": {
+    "status": "submitted",
+    "submittedAt": "REPLACE_WITH_ISO_TIME",
+    "platform": "REPLACE_WITH_SUBMISSION_PLATFORM",
+    "confirmation": "REPLACE_WITH_CONFIRMATION_ID_OR_SCREENSHOT_LINK"
+  }
+}
