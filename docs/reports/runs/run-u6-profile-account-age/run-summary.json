@@ -1,0 +1,19 @@
+{
+  "runId": "run-u6-profile-account-age",
+  "stage": "ready_for_pr",
+  "status": "passed",
+  "repoPath": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/sandbox-repo",
+  "evidenceDir": "/Users/xioshark/Desktop/bytedance/bytedance-implementation/docs/reports/runs/run-u6-profile-account-age",
+  "aiMode": "rules",
+  "targetFiles": [
+    "frontend/src/routes/Profile/Profile.jsx",
+    "frontend/src/styles.css"
+  ],
+  "verificationStatus": "passed",
+  "u6Rehearsal": {
+    "title": "作者资料卡显示注册天数",
+    "skillId": "profile-account-age",
+    "startedAt": "2026-06-02T09:18:00+08:00",
+    "endedAt": "2026-06-02T09:29:10+08:00"
+  }
+}

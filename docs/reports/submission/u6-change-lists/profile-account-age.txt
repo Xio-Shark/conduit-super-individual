@@ -1,0 +1,11 @@
+services/skills/src/profileAccountAge.js
+services/skills/src/registry.js
+sandbox-repo/frontend/src/routes/Profile/Profile.jsx
+sandbox-repo/frontend/src/styles.css
+docs/reports/runs/run-u6-profile-account-age/requirement.md
+docs/reports/runs/run-u6-profile-account-age/plan.md
+docs/reports/runs/run-u6-profile-account-age/diff.patch
+docs/reports/runs/run-u6-profile-account-age/verification.json
+docs/reports/runs/run-u6-profile-account-age/run-summary.json
+docs/reports/submission/u6-change-lists/profile-account-age.txt
+docs/reports/submission/u6-recordings/profile-account-age.txt

@@ -1,0 +1,21 @@
+{
+  "status": "passed_with_gaps",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "status": "gap",
+      "stdout": "",
+      "stderr": "",
+      "durationMs": 0,
+      "summary": "Conduit package.json has no lint script"
+    },
+    {
+      "command": "npm run test",
+      "exitCode": 0,
+      "stdout": "\n> conduit-realworld-example-app@1.0.0 test\n> vitest\n\n\n RUN  v4.0.18 /Users/xioshark/Desktop/bytedance-implementation/sandbox-repo\n\n ✓ backend/helper/helpers.test.js (6 tests) 1ms\n ✓ frontend/src/helpers/errorHandler.test.js (5 tests) 2ms\n ✓ frontend/src/helpers/dateFormatter.test.js (1 test) 10ms\n\n Test Files  3 passed (3)\n      Tests  12 passed (12)\n   Start at  01:26:10\n   Duration  398ms (transform 29ms, setup 104ms, import 29ms, tests 13ms, environment 831ms)\n\n",
+      "stderr": "",
+      "durationMs": 667
+    }
+  ]
+}

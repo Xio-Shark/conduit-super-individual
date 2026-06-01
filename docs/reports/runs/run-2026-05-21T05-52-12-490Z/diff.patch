@@ -1,0 +1,37 @@
+diff --git a/backend/controllers/articles.js b/backend/controllers/articles.js
+index 5f29ac5..cbbb0c0 100644
+--- a/backend/controllers/articles.js
++++ b/backend/controllers/articles.js
+@@ -90,6 +90,7 @@ const createArticle = async (req, res, next) => {
+       title: title,
+       description: description,
+       body: body,
++      draft: false,
+     });
+ 
+     for (const tag of tagList) {
+diff --git a/backend/models/Article.js b/backend/models/Article.js
+index 09897c9..484ac84 100644
+--- a/backend/models/Article.js
++++ b/backend/models/Article.js
+@@ -47,6 +47,7 @@ module.exports = (sequelize, DataTypes) => {
+       title: DataTypes.STRING,
+       description: DataTypes.TEXT,
+       body: DataTypes.TEXT,
++      draft: DataTypes.BOOLEAN,
+     },
+     {
+       sequelize,
+diff --git a/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx b/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
+index 1c99040..f1a2217 100644
+--- a/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
++++ b/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
+@@ -32,7 +32,7 @@ function ArticlesPreview({ articles, loading, updateArticles }) {
+             state={article}
+             className="preview-link"
+           >
+-            <h1>{article.title}</h1>
++            <h1>{article.title}{article.draft ? <span className="draft-badge">Draft</span> : null}</h1>
+             <p>{article.description}</p>
+             <span>Read more...</span>
+             <ArticleTags tagList={article.tagList} />

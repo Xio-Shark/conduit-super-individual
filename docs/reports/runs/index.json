@@ -1,0 +1,533 @@
+{
+  "generatedAt": "2026-05-25T12:25:16.186Z",
+  "runCount": 93,
+  "runs": [
+    {
+      "runId": "run-semantic-recall-demo",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "llm"
+    },
+    {
+      "runId": "run-plan-llm-driven",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-l3-multi-turn-clarify",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "llm"
+    },
+    {
+      "runId": "run-l2-comment-like",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-l2-auto-cover-image",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-25T12-21-56-310Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T12-19-25-043Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T12-15-09-716Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T12-12-43-776Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T12-09-47-853Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-46-05-137Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-45-56-207Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-32-34-586Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-32-28-687Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-28-59-714Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-28-54-456Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-27-59-850Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-27-53-566Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-17-13-581Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-17-05-886Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-09-15-918Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-09-08-766Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-07-01-906Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-06-52-896Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-03-35-137Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T11-02-53-383Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-25T10-51-58-237Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-24T18-30-13-498Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-24T15-37-46-425Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-24T15-34-18-836Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T22-38-28-767Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T22-31-12-932Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T22-16-57-103Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T22-09-35-673Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T21-55-34-941Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T21-23-06-344Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T20-56-00-143Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T20-36-19-891Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T20-14-23-972Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T20-00-55-591Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T19-38-28-436Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T19-30-51-754Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T19-18-14-010Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T18-53-45-430Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T18-33-45-364Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T18-27-21-881Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T18-00-51-480Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T17-52-38-452Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-23T17-48-57-838Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-22T16-28-09-855Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-22T14-31-58-733Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-22T14-26-43-009Z",
+      "status": "paused",
+      "stage": "waiting_requirement_confirm"
+    },
+    {
+      "runId": "run-2026-05-21T18-10-35-525Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T16-54-08-074Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T16-29-24-058Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T16-27-59-613Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T06-31-36-611Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T06-29-13-566Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T06-29-06-235Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T06-28-29-399Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T06-24-47-248Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T06-24-30-577Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "llm"
+    },
+    {
+      "runId": "run-2026-05-21T06-21-56-710Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T05-58-01-181Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "llm"
+    },
+    {
+      "runId": "run-2026-05-21T05-57-20-736Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "llm"
+    },
+    {
+      "runId": "run-2026-05-21T05-52-18-277Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T05-52-12-490Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T05-52-07-802Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T05-52-04-582Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T05-51-56-519Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T05-51-47-392Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T02-16-15-215Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T00-50-39-247Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-21T00-31-10-178Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T19-16-57-873Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T19-08-53-290Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T19-02-29-839Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-44-28-027Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-44-26-668Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-40-59-054Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-36-31-737Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-36-30-692Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-35-58-019Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-30-23-156Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-28-39-030Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-16-29-913Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-14-51-263Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T18-12-15-753Z",
+      "status": "failed",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T17-37-55-856Z",
+      "status": "passed",
+      "stage": "ready_for_pr",
+      "aiMode": "doubao"
+    },
+    {
+      "runId": "run-2026-05-20T17-26-03-046Z",
+      "status": "passed_with_gaps",
+      "stage": "ready_for_pr",
+      "aiMode": "doubao"
+    },
+    {
+      "runId": "run-2026-05-20T17-20-38-453Z",
+      "status": "passed_with_gaps",
+      "stage": "ready_for_pr",
+      "aiMode": "rules"
+    },
+    {
+      "runId": "run-2026-05-20T17-11-44-097Z",
+      "status": "passed_with_gaps",
+      "stage": "ready_for_pr"
+    },
+    {
+      "runId": "run-2026-05-20T17-09-37-011Z",
+      "status": "failed",
+      "stage": "ready_for_pr"
+    }
+  ],
+  "prunedCandidates": [
+    {
+      "runId": "run-2026-05-22T16-35-27-658Z",
+      "reason": "failure-only orphan"
+    },
+    {
+      "runId": "run-2026-05-22T16-35-28-500Z",
+      "reason": "failure-only orphan"
+    },
+    {
+      "runId": "run-2026-05-22T16-35-29-216Z",
+      "reason": "failure-only orphan"
+    },
+    {
+      "runId": "run-2026-05-22T16-35-29-733Z",
+      "reason": "failure-only orphan"
+    }
+  ]
+}

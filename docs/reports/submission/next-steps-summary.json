@@ -1,0 +1,62 @@
+{
+  "status": "failed",
+  "blockerCount": 6,
+  "filteredBlockerCount": 3,
+  "hiddenBlockerCount": 3,
+  "canMarkSubmissionComplete": false,
+  "nextClosureStep": {
+    "id": "local-evidence",
+    "order": 1,
+    "label": "Fill local evidence JSONs",
+    "rationale": "Close rehearsal, video, and defense evidence before publishing or final submission checks."
+  },
+  "fullGateSuggestedNextCommand": "npm run submission:next-steps -- --next",
+  "suggestedNextCommand": "npm run submission:next-steps -- --next",
+  "currentViewCommandsWriteCommand": "npm run submission:next-steps -- --next --commands --write docs/reports/submission/next-steps.sh",
+  "nextClosureSummaryWriteCommand": "npm run submission:next-steps -- --next --summary --write docs/reports/submission/next-steps-summary.json",
+  "currentViewSummaryWriteCommand": "npm run submission:next-steps -- --next --summary --write docs/reports/submission/next-steps-summary.json",
+  "summaryWriteRecommendation": {
+    "preferWriteFlag": true,
+    "summaryWriteFlag": "--summary --write docs/reports/submission/next-steps-summary.json",
+    "summaryWriteScript": "npm run submission:next-steps:summary:write",
+    "nextSummaryWriteScript": "npm run submission:next-steps:next:summary:write",
+    "avoidShellRedirection": true,
+    "reason": "Use --summary --write or the package shortcuts for summary output so npm banners are not redirected into JSON files."
+  },
+  "blockers": [
+    {
+      "id": "u6",
+      "label": "U6 timed rehearsal manifest",
+      "planItems": [
+        "U6",
+        "B27"
+      ],
+      "detail": "fatal: missing or unreadable file: docs/reports/submission/u6-rehearsal-manifest.json",
+      "validateCommand": "npm run check:u6 -- --manifest docs/reports/submission/u6-rehearsal-manifest.json",
+      "writeTo": "docs/reports/submission/u6-rehearsal-manifest.json"
+    },
+    {
+      "id": "video",
+      "label": "local S7 video evidence",
+      "planItems": [
+        "S7",
+        "B33"
+      ],
+      "detail": "evidence-file: missing docs/reports/submission/video-evidence.json",
+      "validateCommand": "npm run check:video-evidence -- --file docs/reports/submission/video-evidence.json",
+      "writeTo": "docs/reports/submission/video-evidence.json"
+    },
+    {
+      "id": "defense",
+      "label": "S10 Q&A rehearsal evidence",
+      "planItems": [
+        "S10",
+        "B38"
+      ],
+      "detail": "evidence-file: missing docs/reports/submission/defense-rehearsal-evidence.json",
+      "validateCommand": "npm run check:defense-rehearsal -- --file docs/reports/submission/defense-rehearsal-evidence.json",
+      "writeTo": "docs/reports/submission/defense-rehearsal-evidence.json"
+    }
+  ],
+  "note": "Only an unblocked full submission gate can mark the project complete; filtered views and focused validation do not change completion status."
+}

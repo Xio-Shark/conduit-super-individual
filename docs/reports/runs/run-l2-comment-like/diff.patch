@@ -1,0 +1,115 @@
+diff --git a/backend/controllers/comments.js b/backend/controllers/comments.js
+index 1a75e40..a233bda 100644
+--- a/backend/controllers/comments.js
++++ b/backend/controllers/comments.js
+@@ -49,6 +49,7 @@ const createComment = async (req, res, next) => {
+       body: body,
+       articleId: article.id,
+       userId: loggedUser.id,
++      likeCount: 0,
+     });
+ 
+     delete loggedUser.dataValues.token;
+@@ -84,4 +85,20 @@ const deleteComment = async (req, res, next) => {
+   }
+ };
+ 
+-module.exports = { allComments, createComment, deleteComment };
++
++//* Like Comment (idempotent count)
++const likeComment = async (req, res, next) => {
++  try {
++    const { commentId } = req.params;
++    const comment = await Comment.findByPk(commentId);
++    if (!comment) throw new NotFoundError("Comment");
++    const current = typeof comment.likeCount === "number" ? comment.likeCount : 0;
++    comment.likeCount = current + 1;
++    await comment.save();
++    res.json({ comment });
++  } catch (error) {
++    next(error);
++  }
++};
++
++module.exports = { allComments, createComment, deleteComment, likeComment };
+diff --git a/backend/helper/commentLike.test.js b/backend/helper/commentLike.test.js
+new file mode 100644
+index 0000000..6e6d5bb
+--- /dev/null
++++ b/backend/helper/commentLike.test.js
+@@ -0,0 +1,28 @@
++import { describe, expect, it } from "vitest";
++import { readFileSync } from "node:fs";
++import path from "node:path";
++
++const repoRoot = path.resolve(__dirname, "..", "..");
++const readFile = (rel) => readFileSync(path.join(repoRoot, rel), "utf8");
++
++describe("comment-like-count Skill cross-stack acceptance", () => {
++  it("Comment model declares likeCount: DataTypes.INTEGER", () => {
++    expect(readFile("backend/models/Comment.js")).toContain("likeCount: DataTypes.INTEGER");
++  });
++
++  it("controllers/comments.js exports likeComment handler", () => {
++    const source = readFile("backend/controllers/comments.js");
++    expect(source).toContain("const likeComment");
++    expect(source).toContain("likeComment }");
++  });
++
++  it("routes/articles/comments.js registers POST /:slug/comments/:commentId/like", () => {
++    expect(readFile("backend/routes/articles/comments.js"))
++      .toContain('/:slug/comments/:commentId/like');
++  });
++
++  it("CommentList.jsx exposes a like button anchor", () => {
++    expect(readFile("frontend/src/components/CommentList/CommentList.jsx"))
++      .toContain('comment-like-button');
++  });
++});
+diff --git a/backend/models/Comment.js b/backend/models/Comment.js
+index 82b444c..1cb8463 100644
+--- a/backend/models/Comment.js
++++ b/backend/models/Comment.js
+@@ -32,6 +32,7 @@ module.exports = (sequelize, DataTypes) => {
+         type: DataTypes.INTEGER,
+       },
+       body: DataTypes.TEXT,
++      likeCount: DataTypes.INTEGER,
+     },
+     {
+       sequelize,
+diff --git a/backend/routes/articles/comments.js b/backend/routes/articles/comments.js
+index d163d40..90c0f88 100644
+--- a/backend/routes/articles/comments.js
++++ b/backend/routes/articles/comments.js
+@@ -5,6 +5,7 @@ const {
+   allComments,
+   createComment,
+   deleteComment,
++  likeComment,
+ } = require("../../controllers/comments");
+ 
+ //? All Comments for Article
+@@ -14,4 +15,7 @@ router.post("/:slug/comments", verifyToken, createComment);
+ //* Delete Comment for Article
+ router.delete("/:slug/comments/:commentId", verifyToken, deleteComment);
+ 
++//* Like Comment for Article
++router.post("/:slug/comments/:commentId/like", verifyToken, likeComment);
++
+ module.exports = router;
+diff --git a/frontend/src/components/CommentList/CommentList.jsx b/frontend/src/components/CommentList/CommentList.jsx
+index 2845a95..e3256d2 100644
+--- a/frontend/src/components/CommentList/CommentList.jsx
++++ b/frontend/src/components/CommentList/CommentList.jsx
+@@ -36,6 +36,10 @@ function CommentList({ triggerUpdate, updateComments }) {
+           <div className="card-footer">
+             <CommentAuthor {...author} />
+             <span className="date-posted">{dateFormatter(createdAt)}</span>
++            <span className="comment-like-count" data-comment-id={id}>
++              <i className="ion-heart"></i>
++            </span>
++            <button type="button" className="comment-like-button">Like</button>
+             {isAuth && loggedUser.username === username && (
+               <button
+                 className="btn btn-sm btn-outline-secondary pull-xs-right"

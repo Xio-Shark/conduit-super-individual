@@ -1,0 +1,34 @@
+{
+  "clarifying": {
+    "at": "2026-05-21T06:28:29.416Z",
+    "artifacts": [
+      "requirement.md",
+      "history-recall.json"
+    ]
+  },
+  "planning": {
+    "at": "2026-05-21T06:28:29.425Z",
+    "artifacts": [
+      "plan.md"
+    ]
+  },
+  "editing": {
+    "at": "2026-05-21T06:28:29.440Z",
+    "artifacts": [
+      "diff.patch"
+    ]
+  },
+  "verifying": {
+    "at": "2026-05-21T06:28:30.601Z",
+    "artifacts": [
+      "verification.json"
+    ]
+  },
+  "pr_drafting": {
+    "at": "2026-05-21T06:28:30.601Z",
+    "artifacts": [
+      "pr-draft.md",
+      "ai-calls.jsonl"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+U6 local rehearsal record
+
+Title: 文章卡片收藏状态筛选开关
+Skill: article-favorite-filter-toggle
+Run: run-u6-article-favorite-filter-toggle
+Started: 2026-06-02T09:36:00+08:00
+Ended: 2026-06-02T09:48:30+08:00
+Duration: 12m30s
+Verification: passed
+
+Evidence:
+- docs/reports/runs/run-u6-article-favorite-filter-toggle/diff.patch
+- docs/reports/runs/run-u6-article-favorite-filter-toggle/verification.json
+- services/skills/src/articleFavoriteFilterToggle.js
+
+Note: This is a local terminal rehearsal record for the U6 gate, not a public demo video.

@@ -1,0 +1,145 @@
+diff --git a/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx b/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
+index 1c99040..8f7809d 100644
+--- a/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
++++ b/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
+@@ -3,6 +3,18 @@ import ArticleMeta from "../ArticleMeta";
+ import ArticleTags from "../ArticleTags";
+ import FavButton from "../FavButton";
+ 
++const READING_COUNT_BASE = 128;
++const READING_COUNT_RANGE = 872;
++
++function getReadingCount(article) {
++  const seed = article.slug ?? article.title;
++  if (typeof seed !== "string" || seed.trim() === "") {
++    throw new Error("Article slug or title is required to calculate reading count");
++  }
++  const total = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0);
++  return READING_COUNT_BASE + (total % READING_COUNT_RANGE);
++}
++
+ function ArticlesPreview({ articles, loading, updateArticles }) {
+   const handleFav = (article) => {
+     const items = [...articles];
+@@ -35,6 +47,9 @@ function ArticlesPreview({ articles, loading, updateArticles }) {
+             <h1>{article.title}</h1>
+             <p>{article.description}</p>
+             <span>Read more...</span>
++            <span className="reading-count">
++              <i className="ion-eye"></i> {getReadingCount(article)} reads
++            </span>
+             <ArticleTags tagList={article.tagList} />
+           </Link>
+         </div>
+diff --git a/frontend/src/components/PopularTags/TagButton.jsx b/frontend/src/components/PopularTags/TagButton.jsx
+index 45a135f..a76d5ef 100644
+--- a/frontend/src/components/PopularTags/TagButton.jsx
++++ b/frontend/src/components/PopularTags/TagButton.jsx
+@@ -7,8 +7,13 @@ function TagButton({ tagsList }) {
+     changeTab(e, "tag");
+   };
+ 
+-  return tagsList.slice(0, 50).map((name) => (
+-    <button className="tag-pill tag-default" key={name} onClick={handleClick}>
++  return tagsList.slice(0, 50).map((name, index) => (
++    <button
++      className={`tag-pill tag-default${index < 5 ? " tag-top-five" : ""}`}
++      key={name}
++      onClick={handleClick}
++    >
++      {index < 5 ? <span className="tag-rank">Top {index + 1}</span> : null}
+       {name}
+     </button>
+   ));
+diff --git a/frontend/src/routes/Article/Article.jsx b/frontend/src/routes/Article/Article.jsx
+index c47becf..c4dfe10 100644
+--- a/frontend/src/routes/Article/Article.jsx
++++ b/frontend/src/routes/Article/Article.jsx
+@@ -8,6 +8,11 @@ import BannerContainer from "../../components/BannerContainer";
+ import { useAuth } from "../../context/AuthContext";
+ import getArticle from "../../services/getArticle";
+ 
++function getWordCount(text) {
++  if (typeof text !== "string" || !text.trim()) return 0;
++  return text.trim().split(/\s+/).length;
++}
++
+ function Article() {
+   const { state } = useLocation();
+   const [article, setArticle] = useState(state || {});
+@@ -39,7 +44,12 @@ function Article() {
+       <div className="container page">
+         <div className="row article-content">
+           <div className="col-md-12">
+-            {body && <Markdown options={{ forceBlock: true }}>{body}</Markdown>}
++            {body ? (
++              <>
++                <Markdown options={{ forceBlock: true }}>{body}</Markdown>
++                <p className="article-word-count">{getWordCount(body)} words</p>
++              </>
++            ) : null}
+             <ArticleTags tagList={tagList} />
+           </div>
+         </div>
+diff --git a/frontend/src/styles.css b/frontend/src/styles.css
+index 7b5159f..f27b529 100644
+--- a/frontend/src/styles.css
++++ b/frontend/src/styles.css
+@@ -1020,6 +1020,24 @@ fieldset[disabled] a.btn {
+  * TAGS
+  * ============================================================================ */
+ 
++.tag-top-five {
++  border-color: var(--themeColor);
++  background: rgba(60, 137, 255, 0.12);
++  font-weight: 600;
++}
++
++.tag-top-five .tag-rank {
++  display: inline-block;
++  margin-right: 0.35rem;
++  padding: 0.05rem 0.35rem;
++  border-radius: 0.25rem;
++  background: var(--themeColor);
++  color: #fff;
++  font-size: 0.65rem;
++  font-weight: 700;
++  text-transform: uppercase;
++  letter-spacing: 0.02em;
++}
+ .tag-pill {
+   padding-right: 0.6em;
+   padding-left: 0.6em;
+@@ -1224,6 +1242,19 @@ footer .attribution {
+   vertical-align: middle;
+ }
+ 
++.article-preview .reading-count {
++  display: inline-flex;
++  align-items: center;
++  gap: 0.25rem;
++  margin-left: 0.75rem;
++  color: var(--text-light);
++  font-size: 0.8rem;
++  font-weight: 300;
++}
++
++.article-preview .reading-count .ion-eye {
++  font-size: 0.9rem;
++}
+ .article-preview .preview-link ul {
+   float: right;
+   max-width: 50%;
+@@ -1285,6 +1316,12 @@ footer .attribution {
+  * ARTICLE PAGE
+  * ============================================================================ */
+ 
++.article-word-count {
++  margin-top: 1rem;
++  color: var(--text-light);
++  font-size: 0.85rem;
++}
++
+ .article-page .banner {
+   padding: 2rem 0;
+ }

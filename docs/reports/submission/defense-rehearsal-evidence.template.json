@@ -1,0 +1,131 @@
+{
+  "rehearsal": {
+    "title": "REPLACE_WITH_REHEARSAL_TITLE",
+    "startedAt": "REPLACE_WITH_START_ISO",
+    "endedAt": "REPLACE_WITH_END_ISO",
+    "participants": [
+      {
+        "name": "REPLACE_WITH_PRESENTER_NAME",
+        "role": "presenter"
+      },
+      {
+        "name": "REPLACE_WITH_REVIEWER_NAME",
+        "role": "reviewer"
+      }
+    ],
+    "recording": "docs/reports/submission/defense-qna-recordings/REPLACE_WITH_RECORDING.mp4",
+    "notes": "docs/reports/submission/defense-qna-notes/REPLACE_WITH_NOTES.md"
+  },
+  "coverage": [
+    "architecture",
+    "u1-schema-driven",
+    "u2-multi-turn-clarify",
+    "u3-plan-llm",
+    "u4-semantic-recall",
+    "u5-non-list-skill",
+    "u6-live-skill",
+    "submission-boundary"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "topic": "architecture",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "q2",
+      "topic": "u1-schema-driven",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "q3",
+      "topic": "u2-multi-turn-clarify",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "q4",
+      "topic": "u3-plan-llm",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "q5",
+      "topic": "u4-semantic-recall",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "q6",
+      "topic": "u5-non-list-skill",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "q7",
+      "topic": "u6-live-skill",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    },
+    {
+      "id": "q8",
+      "topic": "submission-boundary",
+      "question": "REPLACE_WITH_REAL_QUESTION",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered",
+      "evidenceRefs": [
+        "REPLACE_WITH_LOCAL_EVIDENCE_FILE"
+      ]
+    }
+  ],
+  "followUps": [
+    {
+      "questionId": "q1",
+      "prompt": "REPLACE_WITH_FOLLOW_UP",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered"
+    },
+    {
+      "questionId": "q2",
+      "prompt": "REPLACE_WITH_FOLLOW_UP",
+      "answerSummary": "REPLACE_WITH_ANSWER_SUMMARY",
+      "status": "answered"
+    }
+  ],
+  "outcome": {
+    "status": "passed",
+    "openIssues": [],
+    "defensePrepFinalized": true,
+    "defensePrepPath": "docs/reports/submission/defense-prep.md"
+  }
+}

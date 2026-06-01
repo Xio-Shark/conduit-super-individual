@@ -1,0 +1,68 @@
+diff --git a/frontend/src/components/CommentEditor/CommentEditor.jsx b/frontend/src/components/CommentEditor/CommentEditor.jsx
+index 2eb2a55..3e3e86c 100644
+--- a/frontend/src/components/CommentEditor/CommentEditor.jsx
++++ b/frontend/src/components/CommentEditor/CommentEditor.jsx
+@@ -6,6 +6,7 @@ import Avatar from "../Avatar";
+ 
+ function CommentEditor({ updateComments }) {
+   const [{ body }, setForm] = useState({ body: "" });
++  const remainingCharacters = 280 - body.length;
+   const { headers, isAuth, loggedUser } = useAuth();
+   const { username, image } = loggedUser || {};
+   const { slug } = useParams();
+@@ -35,6 +36,9 @@ function CommentEditor({ updateComments }) {
+           rows="3"
+           value={body}
+         ></textarea>
++        <small className="comment-draft-counter">
++          {remainingCharacters} characters remaining
++        </small>
+       </div>
+ 
+       <div className="card-footer">
+diff --git a/frontend/src/styles.css b/frontend/src/styles.css
+index 7b5159f..b223e10 100644
+--- a/frontend/src/styles.css
++++ b/frontend/src/styles.css
+@@ -1187,6 +1187,15 @@ footer .attribution {
+   display: block;
+ }
+ 
++.favorite-filter-toggle {
++  margin-bottom: 1rem;
++  border: 1px solid var(--themeColor);
++  border-radius: 0.25rem;
++  background: transparent;
++  color: var(--themeColor);
++  font-size: 0.85rem;
++  padding: 0.35rem 0.75rem;
++}
+ .article-preview {
+   border-top: 1px solid #eee;
+   padding: 1.5rem 0;
+@@ -1413,6 +1422,13 @@ footer > .container {
+   padding: 0;
+ }
+ 
++.comment-draft-counter {
++  display: block;
++  margin-top: 0.35rem;
++  color: var(--text-light);
++  font-size: 0.75rem;
++  text-align: right;
++}
+ .article-page .comment-form .card-block textarea {
+   border: 0;
+   padding: 1.25rem;
+@@ -1498,6 +1514,11 @@ footer > .container {
+   font-weight: 700;
+ }
+ 
++.profile-account-age {
++  margin-top: 0.5rem;
++  color: var(--text-light);
++  font-size: 0.85rem;
++}
+ .profile-page .user-info p {
+   margin: 0 auto 0.5rem auto;
+   color: var(--text-lighter);

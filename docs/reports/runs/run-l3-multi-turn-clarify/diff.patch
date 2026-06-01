@@ -1,0 +1,46 @@
+diff --git a/frontend/src/routes/Article/Article.jsx b/frontend/src/routes/Article/Article.jsx
+index c47becf..c4dfe10 100644
+--- a/frontend/src/routes/Article/Article.jsx
++++ b/frontend/src/routes/Article/Article.jsx
+@@ -8,6 +8,11 @@ import BannerContainer from "../../components/BannerContainer";
+ import { useAuth } from "../../context/AuthContext";
+ import getArticle from "../../services/getArticle";
+ 
++function getWordCount(text) {
++  if (typeof text !== "string" || !text.trim()) return 0;
++  return text.trim().split(/\s+/).length;
++}
++
+ function Article() {
+   const { state } = useLocation();
+   const [article, setArticle] = useState(state || {});
+@@ -39,7 +44,12 @@ function Article() {
+       <div className="container page">
+         <div className="row article-content">
+           <div className="col-md-12">
+-            {body && <Markdown options={{ forceBlock: true }}>{body}</Markdown>}
++            {body ? (
++              <>
++                <Markdown options={{ forceBlock: true }}>{body}</Markdown>
++                <p className="article-word-count">{getWordCount(body)} words</p>
++              </>
++            ) : null}
+             <ArticleTags tagList={tagList} />
+           </div>
+         </div>
+diff --git a/frontend/src/styles.css b/frontend/src/styles.css
+index 7b5159f..1098a9e 100644
+--- a/frontend/src/styles.css
++++ b/frontend/src/styles.css
+@@ -1285,6 +1285,11 @@ footer .attribution {
+  * ARTICLE PAGE
+  * ============================================================================ */
+ 
++.article-word-count {
++  margin-top: 1rem;
++  color: var(--text-light);
++  font-size: 0.85rem;
++}
+ .article-page .banner {
+   padding: 2rem 0;
+ }

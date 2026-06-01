@@ -1,0 +1,57 @@
+diff --git a/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx b/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
+index 1c99040..8f7809d 100644
+--- a/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
++++ b/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx
+@@ -3,6 +3,18 @@ import ArticleMeta from "../ArticleMeta";
+ import ArticleTags from "../ArticleTags";
+ import FavButton from "../FavButton";
+ 
++const READING_COUNT_BASE = 128;
++const READING_COUNT_RANGE = 872;
++
++function getReadingCount(article) {
++  const seed = article.slug ?? article.title;
++  if (typeof seed !== "string" || seed.trim() === "") {
++    throw new Error("Article slug or title is required to calculate reading count");
++  }
++  const total = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0);
++  return READING_COUNT_BASE + (total % READING_COUNT_RANGE);
++}
++
+ function ArticlesPreview({ articles, loading, updateArticles }) {
+   const handleFav = (article) => {
+     const items = [...articles];
+@@ -35,6 +47,9 @@ function ArticlesPreview({ articles, loading, updateArticles }) {
+             <h1>{article.title}</h1>
+             <p>{article.description}</p>
+             <span>Read more...</span>
++            <span className="reading-count">
++              <i className="ion-eye"></i> {getReadingCount(article)} reads
++            </span>
+             <ArticleTags tagList={article.tagList} />
+           </Link>
+         </div>
+diff --git a/frontend/src/styles.css b/frontend/src/styles.css
+index 7b5159f..95a4906 100644
+--- a/frontend/src/styles.css
++++ b/frontend/src/styles.css
+@@ -1224,6 +1224,19 @@ footer .attribution {
+   vertical-align: middle;
+ }
+ 
++.article-preview .reading-count {
++  display: inline-flex;
++  align-items: center;
++  gap: 0.25rem;
++  margin-left: 0.75rem;
++  color: var(--text-light);
++  font-size: 0.8rem;
++  font-weight: 300;
++}
++
++.article-preview .reading-count .ion-eye {
++  font-size: 0.9rem;
++}
+ .article-preview .preview-link ul {
+   float: right;
+   max-width: 50%;

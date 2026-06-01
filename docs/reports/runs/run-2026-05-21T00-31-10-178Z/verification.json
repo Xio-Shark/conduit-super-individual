@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "command": "npm run lint:sandbox",
+      "exitCode": 0,
+      "stdout": "\n> conduit-super-individual@1.0.0 lint:sandbox\n> eslint sandbox-repo/frontend/src/components/ArticlesPreview/ArticlesPreview.jsx && stylelint sandbox-repo/frontend/src/styles.css\n\n",
+      "stderr": "",
+      "durationMs": 273,
+      "source": "implementation-lint-adapter"
+    },
+    {
+      "command": "npm run test",
+      "exitCode": 0,
+      "stdout": "\n> conduit-realworld-example-app@1.0.0 test\n> vitest\n\n\n RUN  v4.0.18 /Users/xioshark/Desktop/bytedance/bytedance-implementation/sandbox-repo\n\n ✓ backend/helper/helpers.test.js (6 tests) 1ms\n ✓ frontend/src/helpers/errorHandler.test.js (5 tests) 2ms\n ✓ frontend/src/helpers/dateFormatter.test.js (1 test) 10ms\n\n Test Files  3 passed (3)\n      Tests  12 passed (12)\n   Start at  08:31:10\n   Duration  411ms (transform 42ms, setup 170ms, import 36ms, tests 13ms, environment 831ms)\n\n",
+      "stderr": "",
+      "durationMs": 641
+    }
+  ]
+}
