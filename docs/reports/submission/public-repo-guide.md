@@ -194,7 +194,7 @@ PUBLIC_REPO_CLONE_PATH=<fresh-clone-path> bash scripts/pre-submission-check.sh
 |----|------|
 | 本地 monorepo git | 有历史 commit；发布采用 `/tmp/conduit-super-individual-public.*` 副本，避免把外层文档仓误推为 AI 主仓 |
 | 远端公开 URL | <https://github.com/Xio-Shark/conduit-super-individual> |
-| `npm run archive:dry-run` | ✅ 通过；候选包包含关键源码、submission、四类 evidence 模板、`sandbox-repo/`、脚本测试与 12 条关键 run（450 files；`manifestHash` / `contentHash` 以最新 dry-run 输出为准）；不等于公开仓已发布 |
+| `npm run archive:dry-run` | ✅ 通过；候选包包含关键源码、submission、四类 evidence 模板、`sandbox-repo/`、脚本测试与 12 条关键 run（471 files；`manifestHash` / `contentHash` 以最新 dry-run 输出为准）；不等于公开仓已发布 |
 | `npm run check:external-submission` | 🟡 脚本已接入；真实 `external-submission-evidence.json` 尚未填写 |
 | `npm run check:video-evidence` | 🟡 脚本已接入；真实本地录屏 `video-evidence.json` 尚未填写 |
 | `npm run check:public-repo -- --repo <fresh-clone-path>` | 🟡 脚本已接入；本轮已对 fresh clone 执行，需以最新推送后的复跑结果为准 |

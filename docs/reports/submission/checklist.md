@@ -54,7 +54,7 @@
 
 - [x] **H14**：`npm test` 通过（524 项 Node/API/Web/scripts 测试；523 pass / 1 skip），`lint:sandbox`、Conduit Vitest 12 项和 Web build 已复核通过；只证明本地代码门禁，不勾选 §8.2 对外交付
 - [x] submission readiness API 会把 Demo/视频/公开仓占位和未勾选最终提交项标为 `pending_human`
-- [x] `npm run archive:dry-run` 通过：候选发布包可枚举关键源码、submission 材料、四类 evidence 模板、`sandbox-repo/`、脚本测试与 12 条关键 run（450 files；`manifestHash` / `contentHash` 以最新 dry-run 输出为准）；排除 `.env`、`node_modules`、Web build 产物、测试结果目录和 `runs-archive`
+- [x] `npm run archive:dry-run` 通过：候选发布包可枚举关键源码、submission 材料、四类 evidence 模板、`sandbox-repo/`、脚本测试与 12 条关键 run（471 files；`manifestHash` / `contentHash` 以最新 dry-run 输出为准）；排除 `.env`、`node_modules`、Web build 产物、测试结果目录和 `runs-archive`
 - [x] `npm run check:public-repo -- --repo <fresh-clone-path>` 已接入：发布后可校验 fresh clone 的 required 路径、关键 run、submission 占位、禁入路径、常见 secret 模式、保留示例域名 / 模板替换 token / 示例路径段和 Git clean 状态；不创建或证明远端 URL
 - [x] `npm run check:external-submission` 已接入：读取 `docs/reports/submission/external-submission-evidence.json`，校验团队信息、Demo/视频/公开仓 URL、3–8 分钟视频覆盖项、fresh clone 路径与结果、远端 secret scanning 与最终提交确认；`publicRepo.freshClonePath` 必须是本机存在的目录且 `freshCloneCheckStatus` 必须为 `passed`；发布日传入 `--public-repo <fresh-clone-path>` 或 `PUBLIC_REPO_CLONE_PATH` 后，还会要求 evidence 路径与发布日 fresh clone 路径一致；保留示例域名、示例路径段、模板替换 token 和占位链接会被拒绝；脚本可用 `--write-template <path>` 生成占位模板，但模板不得当作真实证据提交
 - [x] `npm run check:video-evidence` 已接入：读取 `docs/reports/submission/video-evidence.json`，校验本地录屏文件、录制纪要、3–8 分钟时长、讲解时间线、§2.1 / §2.2 / U1–U5 / AI usage / public-repo 覆盖和本地证据引用；脚本拒绝公开视频 URL / 上传状态声明，避免替代 `check:external-submission`
